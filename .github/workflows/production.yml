@@ -14,11 +14,11 @@ jobs:
 
     defaults:
       run:
-        working-directory: /var/www/html/prod/hangman.petes-bits.com
+        working-directory: /var/www/html/prod/hangman
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [22.x]
 
     steps:
       - uses: actions/checkout@v3
