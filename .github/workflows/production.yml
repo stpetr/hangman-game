@@ -28,4 +28,4 @@ jobs:
       - run: git pull origin $GITHUB_REF
       - run: npm ci
       - run: npm run build
-      - run: rsync -a --checksum --delete -v ./dist/ ${{ secrets.WEB_ROOT_PATH }}
+      - run: rsync -a --checksum --delete -v --chown=www-data:www-data ./dist/ ${{ secrets.WEB_ROOT_PATH }}
