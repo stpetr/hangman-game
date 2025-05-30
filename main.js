@@ -73,6 +73,8 @@ const hideFinalMessage = () => {
 const startGame = () => {
   selectWord()
   displayWord()
+  // @todo remove
+  console.log('Starting game...')
 }
 
 const gameStep = (letter) => {
