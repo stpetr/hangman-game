@@ -1,11 +1,11 @@
-name: Hangman Game Prod
+name: Hangman Game Dev
 on:
   push:
-    branches: ["master"]
+    branches: ["development"]
 jobs:
   build:
     runs-on: self-hosted
-    environment: production
+    environment: development
     strategy:
       matrix:
         node-version: [22.x]
