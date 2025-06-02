@@ -74,7 +74,7 @@ const startGame = () => {
   selectWord()
   displayWord()
   // @todo remove
-  console.log('Starting game...')
+  console.log('Starting game on dev...')
 }
 
 const gameStep = (letter) => {
